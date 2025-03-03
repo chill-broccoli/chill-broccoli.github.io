@@ -8,7 +8,7 @@
  * @type {import('gatsby').GatsbyConfig}
  */
 module.exports = {
-  pathPrefix: "/chill-broccoli.github.io",
+  pathPrefix: "/",
   siteMetadata: {
     title: "Chill Broccoli Blog",
     description: "Gatsby + TypeScript로 만든 블로그",
@@ -56,6 +56,8 @@ module.exports = {
     },
     `gatsby-transformer-sharp`,
     `gatsby-plugin-sharp`,
+    `gatsby-transformer-sharp`,
+    `gatsby-plugin-react-helmet`,
     {
       resolve: `gatsby-plugin-feed`,
       options: {
