@@ -14,6 +14,7 @@ module.exports = {
     author: `@gatsbyjs`,
     siteUrl: `https://gatsbystarterdefaultsource.gatsbyjs.io/`,
   },
+  pathPrefix: "/my-gatsby-blog",  
   plugins: [
     `gatsby-plugin-image`,
     {
@@ -39,5 +40,7 @@ module.exports = {
         icon: `src/images/gatsby-icon.png`, // This path is relative to the root of the site.
       },
     },
+    `gatsby-plugin-react-helmet`,
+    `gatsby-plugin-gh-pages`
   ],
 }
